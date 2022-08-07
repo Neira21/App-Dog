@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConsumoDeApis-Platzi</title>
+    <link rel="stylesheet" href="main.css">
+    <script
+      src="https://kit.fontawesome.com/10b9adabac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Mukta:wght@400;600&family=Roboto:ital,wght@0,500;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <header>
+        <h1>
+          <i class="fa-solid fa-paw"></i> Imagen Perros
+          <i class="fa-solid fa-paw"></i>
+        </h1>
+    </header>
+    
+    
+    <div id="container">            
+        <span id="error"></span>
+        <h2><i class="fa-solid fa-dog"></i> Perros aleatorios</h2> 
+        
+
+        <section id="randomDogs" class="section1-perros-aleatorios">
+            
+            <div class="contenedor-articulos" >
+                <article id="item-container">
+                    <img id="img1" alt="Foto Perro Aleatorio">
+                    <div>
+                        <button id="btn1" class="save-button">
+                            Guardar Imagen en favoritos
+                        </button>
+                    </div>
+                </article>
+                <article id="item-container">
+                    <img id="img2" alt="Foto Perro Aleatorio">
+                    <div>
+                        <button id="btn2" class="save-button">
+                            Guardar Imagen en favoritos
+                        </button>
+                    </div>
+                </article>
+                <article id="item-container">   
+                    <img id="img3" alt="Foto Perro Aleatorio">
+                    <div>
+                        <button id="btn3" class="save-button">
+                            Guardar Imagen en favoritos
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <button id="reload-button" onclick="LoadRandomDogs()">Recargar</button>    
+            
+        </section>
+        <hr>
+
+        
+        <h2><i class="fa-solid fa-dog"></i> Sube una foto de tu perro</h2>
+        
+        
+        <section id="uploadingMichi" class="section2-perros-subirimagen">
+                
+            <form id="uploadingForm" class="form">
+                <input id="file" type="file" name="file">
+                <button type="button" onclick="uploadPhotoPerro()">Subir foto del perro</button>
+            </form>
+        </section>
+        
+        <hr>
+
+        <h2><i class="fa-solid fa-dog"></i> Perros favoritos</h2>
+        <section class="section3-perros-favoritos">
+            
+            <section id="favoritesDogs" class="container-favorites-dogs">
+
+            </section>
+        </section>
+    </div>
+
+    <footer>
+        <p>Hecho por Alvaro Neira Riveros</p>
+        <ul class="footer-contact">
+        <li>
+            <a href="https://github.com/Neira21">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:alvaroneira98@gmail.com">
+                <i class="fa-brands fa-envelope "></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.linkedin.com/in/alvaro-neira-0129771b6/">
+                <i class="fa-brands fa-linkedin"></i
+            ></a>
+        </li>
+        </ul>
+    </footer>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
